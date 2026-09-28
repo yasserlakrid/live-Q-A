@@ -1,6 +1,6 @@
 # ESI Welcome Day Q&A App
 
-This project is a lightweight in-person question and help-desk system for a university welcome day. It lets visitors choose a manager, select a question topic, and submit that question to the manager in real life. Managers receive the incoming questions in real time through a WebSocket dashboard and can update each question to Waiting, In Progress, or Answered.
+This project is a lightweight in-person question and help-desk system for cse (club scientifique de l'esi) welcome day. It lets visitors choose a manager, select a question topic, and submit that question to the manager in real life. Managers receive the incoming questions in real time through a WebSocket dashboard and can update each question to Waiting, In Progress, or Answered.
 
 The application is intentionally built without a database and stores all state in memory. That makes it simple to run and easy to demo during a live event.
 
