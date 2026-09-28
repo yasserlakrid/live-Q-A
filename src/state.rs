@@ -60,54 +60,40 @@ impl AppState {
         let question_definitions = vec![
             QuestionDefinition {
                 id: "q1".to_string(),
-                text: "What is daily life at ESI really like?".to_string(),
-                category: "Campus Life".to_string(),
+                text: "What does CSE stand for?".to_string(),
+                category: "CSE questions ".to_string(),
             },
             QuestionDefinition {
                 id: "q2".to_string(),
-                text: "What should I know before starting at ESI?".to_string(),
-                category: "Freshers".to_string(),
+                text: "When was CSE created?".to_string(),
+                category: "CSE questions ".to_string(),
             },
             QuestionDefinition {
                 id: "q3".to_string(),
-                text: "How do clubs and student associations work?".to_string(),
-                category: "Clubs".to_string(),
+                text: "What does CSE do?".to_string(),
+                category: "CSE questions ".to_string(),
             },
             QuestionDefinition {
                 id: "q4".to_string(),
-                text: "How can I join a scientific club?".to_string(),
-                category: "Clubs".to_string(),
+                text: "What departments does CSE have?".to_string(),
+                category: "CSE questions".to_string(),
             },
             QuestionDefinition {
                 id: "q5".to_string(),
-                text: "What are the best things to do in my first year?".to_string(),
-                category: "First Year".to_string(),
+                text: "What kind of events does CSE organize?".to_string(),
+                category: "CSE events ".to_string(),
             },
             QuestionDefinition {
                 id: "q6".to_string(),
-                text: "How difficult are the classes?".to_string(),
-                category: "Academics".to_string(),
+                text: "How can I join CSE?".to_string(),
+                category: "CSE lifestyle ? ".to_string(),
             },
             QuestionDefinition {
                 id: "q7".to_string(),
-                text: "How does accommodation work?".to_string(),
-                category: "Accommodation".to_string(),
+                text: "What can I do as a member?".to_string(),
+                category: "CSE lifestyle ?".to_string(),
             },
-            QuestionDefinition {
-                id: "q8".to_string(),
-                text: "What opportunities are available to students?".to_string(),
-                category: "Opportunities".to_string(),
-            },
-            QuestionDefinition {
-                id: "q9".to_string(),
-                text: "How do internships work?".to_string(),
-                category: "Career".to_string(),
-            },
-            QuestionDefinition {
-                id: "q10".to_string(),
-                text: "What is student life like at ESI?".to_string(),
-                category: "Campus Life".to_string(),
-            },
+          
         ];
 
         let managers = managers
