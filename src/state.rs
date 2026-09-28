@@ -46,13 +46,13 @@ impl AppState {
             Manager {
                 id: "Ghada Laidisista".to_string(),
                 name: "Amine".to_string(),
-                status: ManagerStatus::Busy,
+                status: ManagerStatus::Available,
                 bio: "VPrésidentE".to_string(),
             },
             Manager {
                 id: "Mohamed Adem Boudehane".to_string(),
                 name: "Mohamed Adem Boudehane".to_string(),
-                status: ManagerStatus::Offline,
+                status: ManagerStatus::Available,
                 bio: "RH manager.".to_string(),
             },
         ];
