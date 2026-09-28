@@ -32,28 +32,28 @@ impl AppState {
     pub fn new() -> Self {
         let managers = vec![
             Manager {
-                id: "yasser".to_string(),
-                name: "Yasser".to_string(),
+                id: "Yasser Lakrid".to_string(),
+                name: "Yasser Lakrid".to_string(),
                 status: ManagerStatus::Available,
-                bio: "Ask me anything!".to_string(),
+                bio: "the cool guy ".to_string(),
             },
             Manager {
-                id: "sara".to_string(),
-                name: "Sara".to_string(),
+                id: "Nouha Lounes".to_string(),
+                name: "Nouha Lounes".to_string(),
                 status: ManagerStatus::Available,
-                bio: "I can help with student life and clubs.".to_string(),
+                bio: "PrésidentE".to_string(),
             },
             Manager {
-                id: "amine".to_string(),
+                id: "Ghada Laidisista".to_string(),
                 name: "Amine".to_string(),
                 status: ManagerStatus::Busy,
-                bio: "Academic and accommodation questions.".to_string(),
+                bio: "VPrésidentE".to_string(),
             },
             Manager {
-                id: "lina".to_string(),
-                name: "Lina".to_string(),
+                id: "Mohamed Adem Boudehane".to_string(),
+                name: "Mohamed Adem Boudehane".to_string(),
                 status: ManagerStatus::Offline,
-                bio: "Currently unavailable.".to_string(),
+                bio: "RH manager.".to_string(),
             },
         ];
 
