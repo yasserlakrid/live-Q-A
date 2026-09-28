@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ESI Welcome Day</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="sky" aria-hidden="true">
+      <div class="cloud cloud-one"></div>
+      <div class="cloud cloud-two"></div>
+      <div class="cloud cloud-three"></div>
+      <div class="hill hill-back"></div>
+      <div class="hill hill-front"></div>
+    </div>
+
+    <main class="app-shell">
+      <section id="screen-welcome" class="screen active">
+        <div class="glass-panel welcome-panel">
+          <p class="eyebrow">University Welcome Day</p>
+          <h1>Welcome to ESI</h1>
+          <button id="start-button" class="xp-button primary" type="button">Start</button>
+        </div>
+      </section>
+
+      <section id="screen-name" class="screen">
+        <div class="glass-panel form-panel">
+          <p class="eyebrow">Visitor</p>
+          <h2>What should we call you?</h2>
+          <label class="sr-only" for="visitor-name">Your name</label>
+          <input id="visitor-name" name="visitor-name" type="text" maxlength="40" placeholder="Enter your name" />
+          <button id="continue-button" class="xp-button primary" type="button">Continue</button>
+          <p id="name-error" class="error-text" aria-live="polite"></p>
+        </div>
+      </section>
+
+      <section id="screen-manager" class="screen">
+        <div class="glass-panel form-panel large-panel">
+          <p class="eyebrow">Choose a manager</p>
+          <h2>Who would you like to ask?</h2>
+          <div id="manager-list" class="manager-list" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <section id="screen-questions" class="screen">
+        <div class="glass-panel form-panel large-panel">
+          <div class="section-header">
+            <div>
+              <p class="eyebrow">Questions</p>
+              <h2>Pick a topic</h2>
+            </div>
+            <button id="change-manager-button" class="xp-button subtle" type="button">Change manager</button>
+          </div>
+          <div id="question-list" class="question-list" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <section id="screen-waiting" class="screen">
+        <div class="glass-panel waiting-panel">
+          <p class="eyebrow">Waiting Room</p>
+          <h2>Your question has been sent!</h2>
+          <p class="lead">Please find <strong id="waiting-manager-name">the manager</strong> and ask your question in person.</p>
+
+          <div class="status-box">
+            <div class="status-line">
+              <span class="status-dot"></span>
+              <span id="waiting-status">Waiting for manager</span>
+            </div>
+            <div class="mini-info">
+              <span>Visitor:</span>
+              <strong id="waiting-visitor-name">-</strong>
+            </div>
+            <div class="mini-info">
+              <span>Manager:</span>
+              <strong id="waiting-manager-meta">-</strong>
+            </div>
+            <div class="mini-info">
+              <span>Question:</span>
+              <strong id="waiting-question-text">-</strong>
+            </div>
+          </div>
+
+          <button id="ask-another-button" class="xp-button primary" type="button">Ask another question</button>
+        </div>
+      </section>
+    </main>
+
+    <div id="confirm-modal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="confirm-title">
+      <div class="modal-card glass-panel">
+        <p id="confirm-title" class="eyebrow">Confirm question</p>
+        <h3 id="confirm-question-text">Ask this question?</h3>
+        <div class="modal-actions">
+          <button id="confirm-submit" class="xp-button primary" type="button">Ask</button>
+          <button id="confirm-cancel" class="xp-button subtle" type="button">Cancel</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="toast" class="toast hidden" role="status" aria-live="polite"></div>
+
+    <script src="/app.js"></script>
+  </body>
+</html>

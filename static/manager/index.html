@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ESI Manager Console</title>
+    <link rel="stylesheet" href="/manager/style.css" />
+  </head>
+  <body>
+    <div class="sky" aria-hidden="true">
+      <div class="cloud cloud-one"></div>
+      <div class="cloud cloud-two"></div>
+      <div class="cloud cloud-three"></div>
+      <div class="hill hill-back"></div>
+      <div class="hill hill-front"></div>
+    </div>
+
+    <main class="manager-shell">
+      <header class="glass-panel topbar">
+        <div>
+          <p class="eyebrow">Manager Console</p>
+          <h1 id="welcome-title">Welcome</h1>
+        </div>
+        <div class="header-controls">
+          <label class="picker-label" for="manager-picker">Manager</label>
+          <select id="manager-picker" aria-label="Choose manager"></select>
+          <div class="status-group" aria-label="Availability status">
+            <button class="status-toggle available" data-status="Available" type="button">● Available</button>
+            <button class="status-toggle busy" data-status="Busy" type="button">● Busy</button>
+            <button class="status-toggle offline" data-status="Offline" type="button">● Offline</button>
+          </div>
+        </div>
+      </header>
+
+      <section class="summary-grid">
+        <article class="glass-panel stat-card">
+          <p>Waiting</p>
+          <strong id="stat-waiting">0</strong>
+        </article>
+        <article class="glass-panel stat-card">
+          <p>In Progress</p>
+          <strong id="stat-progress">0</strong>
+        </article>
+        <article class="glass-panel stat-card">
+          <p>Answered</p>
+          <strong id="stat-answered">0</strong>
+        </article>
+        <article class="glass-panel stat-card">
+          <p>Total</p>
+          <strong id="stat-total">0</strong>
+        </article>
+      </section>
+
+      <section class="glass-panel queue-panel">
+        <div class="queue-header">
+          <h2>Incoming questions</h2>
+          <span id="connection-status" class="connection-status">Connecting…</span>
+        </div>
+        <div id="queue-list" class="queue-list" aria-live="polite"></div>
+      </section>
+    </main>
+
+    <div id="toast" class="toast hidden" role="status" aria-live="polite"></div>
+
+    <script src="/manager/app.js"></script>
+  </body>
+</html>
