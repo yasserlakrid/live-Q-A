@@ -49,6 +49,24 @@ impl AppState {
                 status: ManagerStatus::Available,
                 bio: "VPrésidentE".to_string(),
             },
+               Manager {
+                id: "Ali Ouzar".to_string(),
+                name: "Ali Ouzar".to_string(),
+                status: ManagerStatus::Available,
+                bio: "Relex/Sponsoring".to_string(),
+            },
+              Manager {
+                id: "Imane MAdani".to_string(),
+                name: "Imane MAdani".to_string(),
+                status: ManagerStatus::Available,
+                bio: "UI/UX manager".to_string(),
+            },
+             Manager {
+                id: "Hamdi Hocine Amine ".to_string(),
+                name: "Hamdi Hocine Amine".to_string(),
+                status: ManagerStatus::Available,
+                bio: "Design Manager".to_string(),
+            },
             Manager {
                 id: "Mohamed Adem Boudehane".to_string(),
                 name: "Mohamed Adem Boudehane".to_string(),
